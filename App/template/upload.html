@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+                <title>My App</title>
+                <meta charset="utf-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1">
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+              </head>
+              <style>
+                  body { 
+  background: url('/static/b.png')  no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+                  </style>
+<body style="
+    margin-top: 25%;">
+
+<center>
+<div class="container mt-3">
+
+<h3>Kindly Upload CSV file</h3>
+<br>
+<form method=post enctype=multipart/form-data>
+    <input type=file name=file>
+    <input type=submit value=Upload class="btn btn-primary">
+</form>
+{% if status %}
+<b>DataFrame Shape is:</b> {{ shape }} 
+<br>
+<b>Database Updated Successfully & Time elasped is </b> {{t}}
+{% endif %}
+<br>
+<br>
+<a href="/">Home</a>
+</div>
+</center>
+</body>
+</html>
