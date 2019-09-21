@@ -74,3 +74,8 @@ Details
 # Further Enhancements
 * Size extended
 * Unit Test cases for api
+
+# Note
+* Code files edited over **Google Cloud Shell** and **Editor** due to Machine Limitations
+
+*Feel Free to Star, and raise Pull Request for additional enhancements*
